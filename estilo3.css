@@ -1,0 +1,40 @@
+body{
+	font-family: Arial;
+}
+#secundario{
+	background-color: #685858;
+	width: 600px;
+	height: 590px;
+	margin: 0 auto;
+	border-radius: 5px;
+	color: black;
+	position: relative;
+}
+
+
+
+#lbl1, #lbl2, #lbl3, #lbl4, #lbl5, #lbl6{
+	width:100px;
+	border-radius: 5px;
+    background-color:lightgray;
+}
+
+#text1, #text2, #text3, #text4{
+	width:480px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+#pago{
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+#enviar{
+	width: 200px;
+ 	background: lightgray;
+ 	color: black;
+  	border-radius: 5px;
+}
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Amazon-Comprar</title>
+      <script src="jquery-3.5.0.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="Operaciones4.js"></script>
+ 
+
+</head>
+<body>
+<div class="row" style="height: 100px">
+  <div class = "col-sm-12 text-dark text-center" style="background-color: #908f8f">
+  <img src="Amazon.png" class="rounded float-left" width="200" height="100">
+
+<div style="float: right; height: 150px" >
+  <h4>Link's de ayuda...</h4>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="Amazon Principal.html">Principal<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="Mision.html">Mision</a>
+       <a class="nav-item nav-link active" href="Ayuda.html">Ayuda</a>
+      <a class="nav-item nav-link active" href="Reembolsos.html">Reembolso y devoluciones</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+<div style="float: left;">
+<nav class="navbar navbar-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" style="width: 590px;">
+    <button class="btn bg-white my-2 my-sm-0" type="submit">Busqueda</button>
+  </form>
+</nav>
+</div>
+ </div>
+</div>
+
+
+
+<div class="row">
+	<div class="col-sm-3 bg-dark text-white text-center">
+		<nav class="navbar navbar-light" >
+      <form class="form-inline">
+        <div class="input-group">
+            <div class="input-group-prepend">
+              
+            </div>
+            <input type="text" class="form-control" placeholder="Busqueda" aria-label="Busqueda" aria-describedby="basic-addon1" class="Navbar" style="width: 300px">
+        </div>
+      </form>
+    </nav>
+		
+		<ul class="text-left">
+			<li><a href="Nuevos.html" class="text-white">Nuevos</a></li>
+			<li><a href="Viejos.html" class="text-white">Viejos</a></li>
+			<li><a href="Juguetes.html" class="text-white">Juguetes</a></li>
+			<li><a href="Ropa.html" class="text-white">Ropa</a></li>
+			<li><a href="Diseño.html" class="text-white">Diseño/Arte</a></li>
+			<li><a href="Videojuegos.html" class="text-white">Videojuegos</a></li>
+			<li><a href="Hogar.html" class="text-white">Hogar</a></li>
+			<li><a href="Limpieza.html" class="text-white">Limpieza</a></li>
+			<li><a href="Anime.html" class="text-white">Anime</a></li>
+			<li><a href="Tecnologia.html" class="text-white">Tecnologia</a></li>
+			<li><a href="Mascotas.html" class="text-white">Mascotas</a></li>	
+		</ul>
+		
+	</div>
+	<div class="col-sm-9 bg-primary text-white text-center">
+    <div class="col-sm-12">
+		 <div id="formulario">
+            <form method="post" id="formdata">
+                <div class="form-group col-sm-4">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text"  class="form-control" name="nombre" id="nombre" required="required">
+                    <small id="nombrelHelp" class="form-text text-muted">Digite nombre empleado</small>
+                </div>
+                
+                <div class="form-group col-sm-4">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" class="form-control" name="apellidos" id="apellidos" required="required">
+                    <small id="apellidoHelp" class="form-text text-muted">Digite apellidos empleado</small>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="direccion">Dirección: </label>
+                    <input type="text" class="form-control" name="direccion" id="direccion" required="required">
+                    <small id="direccionHelp" class="form-text text-muted">Digite dirección</small>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="direccion">Tarjeta de pago: </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genero" id="hombre" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                               Debito
+                        </label>
+                    </div>
+                    <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="mujer" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                               Visa
+                            </label>
+                    </div>                                   
+                </div>
+                <div class="form-group col-sm-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="mayor" id="mayor" required="required">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Es mayor de 18 años:
+                            </label>
+                        </div>
+                </div>
+                <div class="form-group col-sm-4">
+                    <input type="button" class="btn btn-dark" id="botonenviar" value="Enviar">
+                </div>    
+            </form>
+        </div>
+
+        <div id="exito" style="display:none">
+            Sus datos han sido recibidos con éxito.
+        </div>
+
+        <div id="fracaso" style="display:none">
+            Se ha producido un error durante el envío de datos.
+        </div>   
+        </div>     
+	</div>
+
+</div>
+</body>
+</html>
